@@ -1,0 +1,140 @@
+/* CSS para los ajustes solicitados */
+body {
+    background-image: url(./img/75980351-f480-4755-b99e-bb913fc28c76.jpg);
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 20px; /* Añadido espacio entre el logo y el navbar-brand */
+}
+
+.navbar {
+    background-color: rgb(33, 37, 41) !important;
+    padding: 30px;
+}
+
+.nav-link {
+    color: rgb(102, 102, 102) !important;
+    -webkit-text-stroke: 0.05px rgb(0, 0, 0);
+    font-family: playfair display !important;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: 10px 10px 25px rgb(124, 124, 123);
+    -webkit-text-stroke: 0.4px rgb(0, 0, 0);
+    font-family: crimpson pro;
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: end;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    -webkit-text-stroke: 0.26px rgb(0, 0, 0);
+}
+
+footer p {
+    color: rgb(255, 255, 255);
+    text-align: end;
+    font-family: fantasy;
+}
+
+footer {
+    background-color: rgb(23, 23, 24);
+    padding: 30px 0;
+    text-align: right;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-shadow: 10px 10px 25px rgba(2, 0, 11, 0.995);
+    -webkit-text-stroke: 0.4px rgba(255, 255, 255, 0.995);
+    font-family: fantasy;
+}
+
+.redes {
+    text-align: center;
+}
+
+footer .redes a {
+    color: rgba(171, 171, 169, 0.641);
+    text-decoration: none;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.tituloRedes {
+    color: rgba(171, 171, 169, 0.641);
+}
+
+.container p {
+    text-align: left;
+}
+
+.tituloRedes {
+    text-align: center;
+}
+
+body a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(133, 133, 133);
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255) !important;
+}
+
+strong {
+    color: rgb(255, 255, 255);
+}
+
+footer .redes a:hover {
+    color: rgb(255, 255, 255) !important;
+}
+
+p {
+    color: rgb(255, 255, 255);
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px; /* Ajusta el tamaño */
+    height: 60px; /* Ajusta el tamaño */
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el icono */
+}
+
+/* Animación de vibración */
+@keyframes vibrar {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Aplicar la animación de vibración al icono de WhatsApp */
+.whatsapp-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: vibrar 0.5s ease infinite; /* Animación de vibración continua */
+}

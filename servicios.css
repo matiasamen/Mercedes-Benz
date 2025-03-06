@@ -1,0 +1,152 @@
+body {
+    background-image: url(./img/75980351-f480-4755-b99e-bb913fc28c76.jpg);
+    background-size: contain;
+    background-position: -18.9px center; /* Mueve el fondo hacia la izquierda */
+    background-repeat: repeat;
+    backdrop-filter: blur(0px);
+}
+
+.logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.navbar {
+    background-color: rgba(2, 0, 11, 0.995);
+    padding: 30px;
+}
+
+.nav-link {
+    color: rgb(102, 101, 101) !important;
+    -webkit-text-stroke: 0.0px rgb(0, 0, 0);
+}
+
+.services-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(255, 254, 254);
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: 10px 10px 25px rgb(0, 0, 0);
+    -webkit-text-stroke: 0.px rgb(255, 255, 255);
+    font-family: 'Crimson Text', serif;
+}
+
+h3 {
+    color: rgb(195, 195, 6);
+    -webkit-text-stroke: 1px rgb(34, 34, 1);
+}
+
+p {
+    color: rgba(0, 0, 0, 0.851);
+    font-size: 17px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(23, 23, 24);
+    padding: 30px 0;
+    text-align: right;
+}
+
+.redes {
+    text-align: center;
+}
+
+footer .redes a {
+    color: rgba(171, 171, 169, 0.641);
+    text-decoration: none;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.tituloRedes {
+    color: rgba(171, 171, 169, 0.641);
+}
+
+.container p {
+    text-align: left;
+}
+
+footer p {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    text-align: center;
+    font-family: fantasy;
+}
+
+body a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav-link {
+    color: rgb(102, 102, 102) !important;
+    font-family: 'Playfair Display'!important;
+    font-size: 18px;  /* Tamaño igual que el de contactos.css */
+    -webkit-text-stroke: 0.05px #000000;
+}
+
+
+nav a:hover {
+    color: rgb(245, 245, 220) !important;
+}
+
+/* Media queries para dispositivos móviles */
+
+@media (max-width: 575px) {
+    .navbar {
+        padding: 10px;
+    }
+    .service {
+        width: calc(100% - 30px);
+        margin: 10px;
+    }
+}
+
+.service img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.service img:hover {
+    filter: grayscale(0%);
+}
+
+footer .redes a:hover {
+    color: rgb(255, 255, 255) !important;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center !important;
+    font-family: 'Crimson Pro', serif;
+}
+
+/* Modificar posición de los divs de la derecha usando position */
+.row .col-md-4:nth-child(2), /* Segundo div (columna de la derecha) */
+.row .col-md-4:nth-child(4) { /* Cuarto div (columna de la derecha) */
+    position: relative;
+    left: 1.5cm !important; /* Mueve la columna hacia la derecha */
+}
