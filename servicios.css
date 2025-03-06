@@ -1,8 +1,8 @@
 body {
-    background-image: url(./img/MB_Nueva_Sprinter_3-1.webp);
+    background-image: url(./img/75980351-f480-4755-b99e-bb913fc28c76.jpg);
     background-size: contain;
     background-position: -18.9px center; /* Mueve el fondo hacia la izquierda */
-    background-repeat: repeat;
+    background-repeat: no-repeat; /* Evita la repetición del fondo */
     backdrop-filter: blur(0px);
     background-attachment: fixed; /* Esto mantiene la imagen fija */
 }
@@ -28,14 +28,13 @@ body {
 }
 
 .services-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: block; /* Hace que los divs estén uno debajo del otro */
+    width: 100%; /* Asegura que ocupen todo el ancho disponible */
 }
 
 .service {
-    width: 300px;
-    margin: 20px;
+    width: 100%; /* Hace que cada servicio ocupe el 100% del contenedor */
+    margin: 20px 0; /* Ajusta los márgenes para que no queden muy juntos */
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgb(255, 254, 254);
