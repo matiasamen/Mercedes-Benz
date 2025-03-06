@@ -1,21 +1,10 @@
 body {
-    background-image: url(./img/75980351-f480-4755-b99e-bb913fc28c76.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-image: url(./img/MB_Nueva_Sprinter_3-1.webp);
+    background-size: contain;
+    background-position: -18.9px center; /* Mueve el fondo hacia la izquierda */
+    background-repeat: repeat;
     backdrop-filter: blur(0px);
-    min-height: 100vh; /* Esto asegura que el fondo cubra toda la pantalla */
-    margin: 0;
-    padding-bottom: 100px; /* Deja espacio para el footer */
-}
-
-footer {
-    background-color: rgb(23, 23, 24);
-    padding: 30px 0;
-    text-align: center;
-    position: relative;
-    z-index: 2; /* Para asegurarnos de que el footer no cubra el contenido */
+    background-attachment: fixed; /* Esto mantiene la imagen fija */
 }
 
 .logo {
@@ -56,12 +45,6 @@ footer {
 .service img {
     max-width: 100%;
     border-radius: 5px;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
-}
-
-.service img:hover {
-    filter: grayscale(0%);
 }
 
 h2 {
@@ -77,25 +60,26 @@ h3 {
 }
 
 p {
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    text-align: center !important;
-    font-family: 'Crimson Pro', serif;
+    color: rgba(0, 0, 0, 0.851);
+    font-size: 17px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(23, 23, 24);
+    padding: 30px 0;
+    text-align: right;
 }
 
 .redes {
     text-align: center;
-    margin-top: 10px;
 }
 
 footer .redes a {
     color: rgba(171, 171, 169, 0.641);
     text-decoration: none;
+    text-align: center;
     margin-right: 15px;
-}
-
-footer .redes a:hover {
-    color: rgb(255, 255, 255) !important;
 }
 
 .tituloRedes {
@@ -120,7 +104,7 @@ body a {
 .nav-link {
     color: rgb(102, 102, 102) !important;
     font-family: 'Playfair Display'!important;
-    font-size: 18px;
+    font-size: 18px;  /* Tamaño igual que el de contactos.css */
     -webkit-text-stroke: 0.05px #000000;
 }
 
@@ -129,31 +113,40 @@ nav a:hover {
 }
 
 /* Media queries para dispositivos móviles */
-@media (max-width: 768px) {
-    body {
-        background-attachment: scroll; /* El fondo se mueve con el contenido en móviles */
-    }
 
+@media (max-width: 575px) {
     .navbar {
         padding: 10px;
     }
-
     .service {
         width: calc(100% - 30px);
-        margin: 10px auto;
+        margin: 10px;
     }
+}
 
-    footer {
-        text-align: center;
-    }
+.service img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
 
-    .redes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.service img:hover {
+    filter: grayscale(0%);
+}
 
-    footer p {
-        font-size: 14px;
-    }
+footer .redes a:hover {
+    color: rgb(255, 255, 255) !important;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center !important;
+    font-family: 'Crimson Pro', serif;
+}
+
+/* Modificar posición de los divs de la derecha usando position */
+.row .col-md-4:nth-child(2), /* Segundo div (columna de la derecha) */
+.row .col-md-4:nth-child(4) { /* Cuarto div (columna de la derecha) */
+    position: relative;
+    left: 1.5cm !important; /* Mueve la columna hacia la derecha */
 }
