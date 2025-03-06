@@ -1,10 +1,12 @@
 body {
-    background-image: url(./img/75980351-f480-4755-b99e-bb913fc28c76.jpg);
-    background-size: contain;
-    background-position: -18.9px center; /* Mueve el fondo hacia la izquierda */
+    background-image: url(./img/MB_Nueva_Sprinter_3-1.webp);
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita la repetición del fondo */
     backdrop-filter: blur(0px);
     background-attachment: fixed; /* Esto mantiene la imagen fija */
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
@@ -28,17 +30,23 @@ body {
 }
 
 .services-container {
-    display: block; /* Hace que los divs estén uno debajo del otro */
-    width: 100%; /* Asegura que ocupen todo el ancho disponible */
+    display: flex;
+    flex-direction: column; /* Asegura que los divs estén uno debajo del otro */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px; /* Añadido para evitar márgenes innecesarios */
 }
 
 .service {
-    width: 100%; /* Hace que cada servicio ocupe el 100% del contenedor */
-    margin: 20px 0; /* Ajusta los márgenes para que no queden muy juntos */
+    width: 100%; /* Cada servicio ocupará el 100% de su contenedor */
+    max-width: 300px; /* Máximo ancho de 300px */
+    margin: 20px 0; /* Márgenes para separar los servicios */
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgb(255, 254, 254);
     border: 3px solid rgb(0, 0, 0);
+    text-align: center; /* Centra el contenido dentro de cada servicio */
 }
 
 .service img {
@@ -118,8 +126,8 @@ nav a:hover {
         padding: 10px;
     }
     .service {
-        width: calc(100% - 30px);
-        margin: 10px;
+        width: 100%; /* Asegura que el servicio ocupe todo el ancho en dispositivos pequeños */
+        margin: 10px 0; /* Ajusta los márgenes */
     }
 }
 
