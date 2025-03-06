@@ -2,7 +2,7 @@ body {
     background-image: url(./img/75980351-f480-4755-b99e-bb913fc28c76.jpg);
     background-size: contain;
     background-position: -18.9px center; /* Mueve el fondo hacia la izquierda */
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     backdrop-filter: blur(0px);
 }
 
